@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+
+    <!-- ========== Start links css files ========== -->
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/mediaquery.css" />
+
+    <!-- ========== End links ========== -->
+
+    <!-- ========== Start Favicon ========== -->
+
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/color/48/youtube-play.png"
+      type="image/x-icon"
+    />
+
+    <!-- ========== End Favicon ========== -->
+
+    <!-- ========== Start link font ========== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========== End link font ========== -->
+  </head>
+
+  <body>
+    <!-- ========== Start Header Section ========== -->
+
+    <header>
+      <nav>
+        <div class="menu-logo-container">
+          <i class="fa-solid fa-bars" style="color: #c7c7c7"></i>
+          <div class="logo-container">
+            <img
+              src="./images/youtube-logo-png-2061.png"
+              width="26vw"
+              alt="Youtube logo"
+            />
+            <span>YouTube</span>
+          </div>
+        </div>
+        <div class="search-mic-container">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #c7c7c7"></i>
+          </div>
+          <div class="mic-container">
+            <i class="fa-solid fa-microphone" style="color: #ffffff"></i>
+          </div>
+        </div>
+
+        <div class="notification-create-profile-container">
+          <i class="fa-solid fa-video" style="color: #ffffff"></i>
+          <i class="fa-regular fa-bell" style="color: #ffffff"></i>
+          <img src="./images/profile.png" width="37vw" alt="profile image" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========== End Header Section ========== -->
+
+    <!-- ========== Start sidebar Section ========== -->
+    <div class="responsive-sidebar-mobile-view">
+      <div class="responsive-links">
+        <div class="links-container">
+          <i class="fa-solid fa-house" style="color: #fff; font-size: 18px"></i>
+          <h2 style="font-weight: bold">Home</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="24"
+            height="24"
+            src="./images/icons8-youtube-shorts-24.png"
+            alt="youtube-shorts"
+          />
+          <h2>Shorts</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="24"
+            height="24"
+            src="./images/icons8-subscription-24.png"
+            alt="external-subscription-social-media-thin-kawalan-studio"
+          />
+          <h2>Subscription</h2>
+        </div>
+
+        <div class="links-container">
+          <i
+            class="fa-solid fa-play"
+            style="
+              color: #ffffffb7;
+              border: 1px solid #fff;
+              font-size: 9px;
+              padding: 4px 5px;
+            "
+          ></i>
+          <h2>You</h2>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="responsive-sidebar">
+        <div class="responsive-links">
+          <div class="links-container">
+            <i
+              class="fa-solid fa-house"
+              style="color: #fff; font-size: 18px"
+            ></i>
+            <h2 style="font-weight: bold">Home</h2>
+          </div>
+          <div class="links-container">
+            <img
+              width="24"
+              height="24"
+              src="./images/icons8-youtube-shorts-24.png"
+              alt="youtube-shorts"
+            />
+            <h2>Shorts</h2>
+          </div>
+          <div class="links-container">
+            <img
+              width="24"
+              height="24"
+              src="./images/icons8-subscription-24.png"
+              alt="external-subscription-social-media-thin-kawalan-studio"
+            />
+            <h2>Subscription</h2>
+          </div>
+
+          <div class="links-container">
+            <i
+              class="fa-solid fa-play"
+              style="
+                color: #ffffffb7;
+                border: 1px solid #fff;
+                font-size: 9px;
+                padding: 4px 5px;
+              "
+            ></i>
+            <h2>You</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <div class="links-container active">
+          <i class="fa-solid fa-house" style="color: #fff; font-size: 18px"></i>
+          <h2 style="font-weight: bold">Home</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="24"
+            height="24"
+            src="./images/icons8-youtube-shorts-24.png"
+            alt="youtube-shorts"
+          />
+          <h2>Shorts</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="24"
+            height="24"
+            src="./images/icons8-subscription-24.png"
+            alt="external-subscription-social-media-thin-kawalan-studio"
+          />
+          <h2>Subscription</h2>
+        </div>
+        <hr class="hr-color" />
+
+        <div class="links-container aside-title">
+          <h2>You</h2>
+          <i
+            class="fa-solid fa-chevron-right"
+            style="color: #ffffff; font-size: 13px"
+          ></i>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-regular fa-user"
+            style="
+              color: #ffffffa2;
+              border: 1px solid #fff;
+              font-size: 18px;
+              font-weight: 100;
+              padding: 0 2px;
+            "
+          ></i>
+          <h2>Your channel</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-solid fa-clock-rotate-left"
+            style="color: #ffffffaf; font-size: 18px"
+          ></i>
+          <h2>History</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-solid fa-play"
+            style="
+              color: #ffffffb7;
+              border: 1px solid #fff;
+              font-size: 9px;
+              padding: 4px 5px;
+            "
+          ></i>
+          <h2>Your videos</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-regular fa-clock"
+            style="color: #ffffffb7; font-size: 18px"
+          ></i>
+          <h2>Watch later</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-solid fa-chevron-down"
+            style="color: #ffffffc2; font-size: 13px"
+          ></i>
+          <h2>Show more</h2>
+        </div>
+
+        <hr class="hr-color" />
+
+        <div class="links-container aside-title">
+          <h2>Subscriptions</h2>
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile1.jpg" class="img" width="33" alt="" />
+          <h2>CoderBoy</h2>
+          <img
+            width="15"
+            height="15"
+            src="https://img.icons8.com/color/48/youtube-live.png"
+            alt="youtube-live"
+          />
+        </div>
+
+        <div class="links-container gap">
+          <img src="./images/unnamed (7).jpg" class="img" width="33" alt="" />
+          <h2>webdevhindi</h2>
+          <img
+            width="15"
+            height="15"
+            src="https://img.icons8.com/color/48/youtube-live.png"
+            alt="youtube-live"
+          />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile2.webp" class="img" width="33" alt="" />
+          <h2>LearnEnglish</h2>
+          <img
+            width="15"
+            height="15"
+            src="https://img.icons8.com/color/48/youtube-live.png"
+            alt="youtube-live"
+          />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile3.jpg" class="img" width="33" alt="" />
+          <h2>v3 beast boy</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile4.jpg" class="img" width="33" alt="" />
+          <h2>CD Coder</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile1.jpg" class="img" width="33" alt="" />
+          <h2>let's Rock</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile2.webp" class="img" width="33" alt="" />
+          <h2>CoderBoy</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile3.jpg" class="img" width="33" alt="" />
+          <h2>LearnEnglish</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile4.jpg" class="img" width="33" alt="" />
+          <h2>webdevhindi</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+        <div class="links-container gap">
+          <img src="./images/profile2.webp" class="img" width="33" alt="" />
+          <h2>let's Rock</h2>
+          <img width="7" height="7" src="./images/dot.png" alt="sphere" />
+        </div>
+
+        <hr class="hr-color" />
+
+        <div class="links-container aside-title">
+          <h2>Explore</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="23"
+            height="23"
+            src="./images/tranding.png"
+            alt="fire-element--v1"
+            style="rotate: 35deg"
+          />
+          <h2>Tranding</h2>
+        </div>
+
+        <div class="links-container">
+          <img src="./images/shopping.png" width="23" height="23" alt="" />
+          <h2>Shopping</h2>
+        </div>
+        <div class="links-container">
+          <img src="./images/music.png" width="23" height="23" alt="" />
+          <h2>Music</h2>
+        </div>
+        <div class="links-container">
+          <img src="./images/movies.png" width="23" height="23" alt="" />
+          <h2>Movies</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="23"
+            height="23"
+            src="https://img.icons8.com/color/48/youtube-live.png"
+            alt="youtube-live"
+          />
+          <h2>Live</h2>
+        </div>
+        <div class="links-container">
+          <img src="./images/gaming.png" width="23" height="23" alt="" />
+          <h2>Gaming</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-regular fa-newspaper"
+            style="color: #ffffff; font-size: 18px"
+          ></i>
+          <h2>News</h2>
+        </div>
+
+        <hr class="hr-color" />
+
+        <div class="links-container aside-title">
+          <h2>More from YouTube</h2>
+        </div>
+        <div class="links-container">
+          <img
+            width="23"
+            height="23"
+            src="https://img.icons8.com/color/48/youtube-play.png"
+            alt="fire-element--v1"
+          />
+          <h2>YouTube Premium</h2>
+        </div>
+
+        <div class="links-container">
+          <img
+            src="https://img.icons8.com/color/48/youtube-studio.png"
+            width="23"
+            height="23"
+            alt=""
+          />
+          <h2>YouTube Studio</h2>
+        </div>
+        <div class="links-container">
+          <img
+            src="https://img.icons8.com/color/48/youtube-music.png"
+            width="23"
+            height="23"
+            alt=""
+          />
+          <h2>YouTube Music</h2>
+        </div>
+        <div class="links-container">
+          <img
+            src="https://img.icons8.com/plasticine/100/youtube-play--v2.png"
+            width="23"
+            height="23"
+            alt=""
+          />
+          <h2>YouTube Kids</h2>
+        </div>
+
+        <hr class="hr-color" />
+
+        <div class="links-container">
+          <img
+            src="./images/icons8-setting-50.png"
+            width="23"
+            height="23"
+            alt=""
+          />
+          <h2>Setting</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-regular fa-flag"
+            style="color: #ffffff; font-size: 16px"
+          ></i>
+          <h2>Report history</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-solid fa-question"
+            style="
+              color: #ffffff;
+              font-size: 12px;
+              width: 17px;
+              height: 17px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              border: 1px solid #fff;
+            "
+          ></i>
+          <h2>Get Help</h2>
+        </div>
+        <div class="links-container">
+          <i
+            class="fa-solid fa-circle-exclamation"
+            style="color: #ffffff; font-size: 18px"
+          ></i>
+          <h2>Send feedback</h2>
+        </div>
+
+        <hr class="hr-color" />
+
+        <div class="footer">
+          <h2>
+            About Press Copyright Contact-us Creators Advertise Developers
+          </h2>
+          <h2>
+            Terms PrivacyPolicy & SafetyHow YouTube worksTest new features
+          </h2>
+          <p>© 2024 Google LLC</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ========== End sidebar Section ========== -->
+
+    <main>
+      <header class="sec-nav">
+        <div class="Categories active-link">
+          <p>All</p>
+        </div>
+        <div class="Categories">
+          <p>Mixes</p>
+        </div>
+        <div class="Categories">
+          <p>Gaming</p>
+        </div>
+        <div class="Categories">
+          <p>Music</p>
+        </div>
+        <div class="Categories">
+          <p>Tech</p>
+        </div>
+        <div class="Categories">
+          <p>Live</p>
+        </div>
+        <div class="Categories">
+          <p>Gadgets</p>
+        </div>
+        <div class="Categories">
+          <p>News</p>
+        </div>
+        <div class="Categories">
+          <p>Remix</p>
+        </div>
+        <div class="Categories">
+          <p>Watched</p>
+        </div>
+        <div class="Categories">
+          <p>New to you</p>
+        </div>
+        <div class="Categories">
+          <p>Recently Uploaded</p>
+        </div>
+        <div class="Categories">
+          <p>Old Songs</p>
+        </div>
+        <div class="Categories">
+          <p>Gaming</p>
+        </div>
+        <div class="Categories">
+          <p>Music</p>
+        </div>
+        <div class="Categories">
+          <p>Tech</p>
+        </div>
+        <div class="Categories">
+          <p>Live</p>
+        </div>
+      </header>
+      <div class="video-container">
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/1.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/2.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/3.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/4.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/5.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/6.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/7.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-dec">
+          <div class="thumnail">
+            <img src="./images/8.png" alt="thumnail" />
+          </div>
+          <div class="dec">
+            <div class="logo-dec">
+              <img
+                src="./images/profile.png"
+                width="36"
+                height="36"
+                alt="profile"
+              />
+              <p>
+                React Full Course | Beginner to advance | DevMindScape |
+                Frontend Development
+              </p>
+            </div>
+            <div class="channel-name">
+              <p>Coder-boy</p>
+              <i
+                class="fa-solid fa-circle-check"
+                style="color: #b0b0b0; font-size: 14px"
+              ></i>
+            </div>
+            <div class="views-time">
+              <p>500k views</p>
+              <p>9 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ========== Start font awesome icon link ========== -->
+
+    <script
+      src="https://kit.fontawesome.com/50f49a27bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ========== End font awesome icon link ========== -->
+  </body>
+</html>
