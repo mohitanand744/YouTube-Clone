@@ -11,7 +11,7 @@
   .video-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  aside .nav-links {
+  aside {
     display: none;
   }
   .responsive-sidebar {
