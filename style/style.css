@@ -180,7 +180,7 @@ nav {
 
 aside {
   background: var(--main-bg-color);
-  width: 16vw;
+  width: 240px;
   height: calc(100vh - 56px);
   color: var(--text-color);
   position: fixed;
@@ -447,7 +447,9 @@ aside {
   & .video-dec {
     z-index: -1;
   }
-
+  &::-webkit-scrollbar {
+    display: none;
+  }
   & .thumnail img {
     width: 100%;
     border-radius: 14px;
